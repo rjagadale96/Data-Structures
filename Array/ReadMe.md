@@ -1,2 +1,2 @@
-## Array
-* Properties
+### Arrays
+* ## Properties
