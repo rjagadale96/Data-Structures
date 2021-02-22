@@ -1,3 +1,7 @@
+// Time Complexity :- O(n x m) where n is row and m is column
+// Space Complexity:- O(1)
+
+
 class Solution {
     public boolean isValidSudoku(char[][] board) {
         
