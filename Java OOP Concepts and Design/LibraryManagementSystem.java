@@ -202,3 +202,32 @@ public class BookItem extends Book{
 	}
 	
 }
+
+public class Rack{
+	private int number;
+	private String locationIdentifier;
+}
+
+
+public interface Search{
+	public List<Book> searchByTitle(String title);
+	public List<Book> searchByAuthor(String author);
+	public List<Book> searchBySubject(String subject);
+	public List<Book> searchByPubDate(Date publishDate);
+}
+
+public class Catalog impleHashMap<K, V>earch{
+	private HashMap<String, List<Book>> bookTitles;
+	private HashMap<String, List<Book>> bookAuthors;
+	private HashMap<String, List<Book>> bookSubjects;
+	private HashMap<String, List<Book>> bookPublicationDates;
+	
+	public List<Book> searchByTitle(String query){
+		return bookTitles.get(query);
+	}
+	
+	public List<Book> searchByAuthor(String query){
+		return bookAuthors.get(query);
+	}
+	
+}
