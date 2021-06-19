@@ -3,34 +3,19 @@ import java.util.HashMap;
 import java.util.List;
 
 public enum BookFormat{
-	HARDCOVER;
-	PAPERBACK;
-	AUDIO_BOOK;
-	NEWSPAPER;
-	MAGAZINE;
-	JOURNAL;
+	HARDCOVER, PAPERBACK, AUDIO_BOOK, NEWSPAPER,MAGAZINE,JOURNAL
 }
 
 public enum BookStatus{
-	AVAILABLE;
-	RESERVED;
-	LOANED;
-	LOST;
+	AVAILABLE,RESERVED,LOANED,LOST
 }
 
 public enum ReservationStatus{
-	WAITING;
-	PENDING;
-	CANCELLED;
-	NONE;
+	WAITING,PENDING,CANCELLED,NONE
 }
 
 public enum AccountStatus{
-	ACTIVE;
-	CLOSED;
-	CANCELLED;
-	BLACKLISTED;
-	NONE;
+	ACTIVE,CLOSED,CANCELLED,BLACKLISTED,NONE
 }
 
 public class Address{
